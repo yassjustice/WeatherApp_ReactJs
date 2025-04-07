@@ -1,0 +1,25 @@
+/* WeatherCard styles */
+
+.card {
+  background: var(--thunder-secondary);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.title {
+  color: var(--thunder-text);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.info {
+  display: grid;
+  gap: 0.5rem;
+  color: var(--thunder-light);
+}

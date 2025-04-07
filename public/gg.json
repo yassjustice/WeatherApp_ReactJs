@@ -1,0 +1,595 @@
+
+{
+  "regions": [
+    {
+      "name": "Europe",
+      "countries": [
+        {
+          "name": "United Kingdom",
+          "cities": [
+            {
+              "name": "London",
+              "lat": 51.5074,
+              "lng": -0.1278,
+              "major": true
+            },
+            {
+              "name": "Birmingham",
+              "lat": 52.4862,
+              "lng": -1.8904,
+              "major": true
+            },
+            {
+              "name": "Manchester",
+              "lat": 53.4808,
+              "lng": -2.2426,
+              "major": true
+            },
+            {
+              "name": "Leeds",
+              "lat": 53.7965,
+              "lng": -1.5463,
+              "major": true
+            },
+            {
+              "name": "Glasgow",
+              "lat": 55.8584,
+              "lng": -4.2593,
+              "major": true
+            }
+          ]
+        },
+        {
+          "name": "France",
+          "cities": [
+            {
+              "name": "Paris",
+              "lat": 48.8566,
+              "lng": 2.3522,
+              "major": true
+            },
+            {
+              "name": "Marseille",
+              "lat": 43.2965,
+              "lng": 5.3698,
+              "major": true
+            },
+            {
+              "name": "Lyon",
+              "lat": 45.7589,
+              "lng": 4.8492,
+              "major": true
+            },
+            {
+              "name": "Toulouse",
+              "lat": 43.6043,
+              "lng": 1.4437,
+              "major": true
+            },
+            {
+              "name": "Nice",
+              "lat": 43.7031,
+              "lng": 7.2668,
+              "major": true
+            }
+          ]
+        },
+        {
+          "name": "Germany",
+          "cities": [
+            {
+              "name": "Berlin",
+              "lat": 52.5200,
+              "lng": 13.4050,
+              "major": true
+            },
+            {
+              "name": "Munich",
+              "lat": 48.1351,
+              "lng": 11.5820,
+              "major": true
+            },
+            {
+              "name": "Hamburg",
+              "lat": 53.5503,
+              "lng": 10.0005,
+              "major": true
+            },
+            {
+              "name": "Cologne",
+              "lat": 50.9375,
+              "lng": 6.9603,
+              "major": true
+            },
+            {
+              "name": "Frankfurt",
+              "lat": 50.1109,
+              "lng": 8.6821,
+              "major": true
+            }
+          ]
+        },
+        {
+          "name": "Italy",
+          "cities": [
+            {
+              "name": "Rome",
+              "lat": 41.9028,
+              "lng": 12.4964,
+              "major": true
+            },
+            {
+              "name": "Milan",
+              "lat": 45.4642,
+              "lng": 9.1895,
+              "major": true
+            },
+            {
+              "name": "Naples",
+              "lat": 40.8568,
+              "lng": 14.2681,
+              "major": true
+            },
+            {
+              "name": "Turin",
+              "lat": 45.0703,
+              "lng": 7.6869,
+              "major": true
+            },
+            {
+              "name": "Venice",
+              "lat": 45.4349,
+              "lng": 12.3384,
+              "major": true
+            }
+          ]
+        },
+        {
+          "name": "Spain",
+          "cities": [
+            {
+              "name": "Madrid",
+              "lat": 40.4168,
+              "lng": -3.7038,
+              "major": true
+            },
+            {
+              "name": "Barcelona",
+              "lat": 41.3879,
+              "lng": 2.1690,
+              "major": true
+            },
+            {
+              "name": "Valencia",
+              "lat": 39.4696,
+              "lng": -0.3763,
+              "major": true
+            },
+            {
+              "name": "Seville",
+              "lat": 37.3926,
+              "lng": -5.9963,
+              "major": true
+            },
+            {
+              "name": "Zaragoza",
+              "lat": 41.6488,
+              "lng": -0.8893,
+              "major": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Africa",
+      "countries": [
+        {
+          "name": "Morocco",
+          "cities": [
+            {
+              "name": "Casablanca",
+              "lat": 33.5731,
+              "lng": -7.5898,
+              "major": true
+            },
+            {
+              "name": "Rabat",
+              "lat": 34.0209,
+              "lng": -6.8416,
+              "major": true
+            },
+            {
+              "name": "Marrakech",
+              "lat": 31.6295,
+              "lng": -7.9811,
+              "major": true
+            },
+            {
+              "name": "Fès",
+              "lat": 34.0181,
+              "lng": -5.0078,
+              "major": false
+            },
+            {
+              "name": "Tangier",
+              "lat": 35.7593,
+              "lng": -5.8194,
+              "major": true
+            }
+          ]
+        },
+        {
+          "name": "Egypt",
+          "cities": [
+            {
+              "name": "Cairo",
+              "lat": 30.0444,
+              "lng": 31.2357,
+              "major": true
+            },
+            {
+              "name": "Alexandria",
+              "lat": 31.2156,
+              "lng": 29.9553,
+              "major": true
+            },
+            {
+              "name": "Giza",
+              "lat": 30.0131,
+              "lng": 31.2089,
+              "major": true
+            },
+            {
+              "name": "Port Said",
+              "lat": 31.2569,
+              "lng": 32.3128,
+              "major": true
+            },
+            {
+              "name": "Suez",
+              "lat": 29.9773,
+              "lng": 32.5328,
+              "major": true
+            }
+          ]
+        },
+        {
+          "name": "South Africa",
+          "cities": [
+            {
+              "name": "Johannesburg",
+              "lat": -26.2041,
+              "lng": 28.0473,
+              "major": true
+            },
+            {
+              "name": "Cape Town",
+              "lat": -33.9249,
+              "lng": 18.4241,
+              "major": true
+            },
+            {
+              "name": "Durban",
+              "lat": -29.8579,
+              "lng": 31.0292,
+              "major": true
+            },
+            {
+              "name": "Pretoria",
+              "lat": -25.7463,
+              "lng": 28.1876,
+              "major": true
+            },
+            {
+              "name": "Port Elizabeth",
+              "lat": -33.9249,
+              "lng": 25.5762,
+              "major": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Asia",
+      "countries": [
+        {
+          "name": "Japan",
+          "cities": [
+            {
+              "name": "Tokyo",
+              "lat": 35.682839,
+              "lng": 139.759455,
+              "major": true
+            },
+            {
+              "name": "Osaka",
+              "lat": 34.6937,
+              "lng": 135.5023,
+              "major": true
+            },
+            {
+              "name": "Nagoya",
+              "lat": 35.1803,
+              "lng": 136.9064,
+              "major": true
+            },
+            {
+              "name": "Sapporo",
+              "lat": 43.0618,
+              "lng": 141.3544,
+              "major": true
+            },
+            {
+              "name": "Fukuoka",
+              "lat": 33.5904,
+              "lng": 130.4017,
+              "major": true
+            }
+          ]
+        },
+        {
+          "name": "China",
+          "cities": [
+            {
+              "name": "Beijing",
+              "lat": 39.9042,
+              "lng": 116.4074,
+              "major": true
+            },
+            {
+              "name": "Shanghai",
+              "lat": 31.2304,
+              "lng": 121.4737,
+              "major": true
+            },
+            {
+              "name": "Guangzhou",
+              "lat": 23.1291,
+              "lng": 113.2644,
+              "major": true
+            },
+            {
+              "name": "Shenzhen",
+              "lat": 22.5431,
+              "lng": 114.0579,
+              "major": true
+            },
+            {
+              "name": "Chongqing",
+              "lat": 29.5627,
+              "lng": 106.5522,
+              "major": true
+            }
+          ]
+        },
+        {
+          "name": "India",
+          "cities": [
+            {
+              "name": "New Delhi",
+              "lat": 28.7041,
+              "lng": 77.1025,
+              "major": true
+            },
+            {
+              "name": "Mumbai",
+              "lat": 19.0759,
+              "lng": 72.8777,
+              "major": true
+            },
+            {
+              "name": "Bengaluru",
+              "lat": 12.9716,
+              "lng": 77.5946,
+              "major": true
+            },
+            {
+              "name": "Hyderabad",
+              "lat": 17.3850,
+              "lng": 78.4867,
+              "major": true
+            },
+            {
+              "name": "Chennai",
+              "lat": 13.0827,
+              "lng": 80.2707,
+              "major": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "North America",
+      "countries": [
+        {
+          "name": "United States",
+          "cities": [
+            {
+              "name": "New York City",
+              "lat": 40.7128,
+              "lng": -74.0060,
+              "major": true
+            },
+            {
+              "name": "Los Angeles",
+              "lat": 34.0522,
+              "lng": -118.2437,
+              "major": true
+            },
+            {
+              "name": "Chicago",
+              "lat": 41.8781,
+              "lng": -87.6298,
+              "major": true
+            },
+            {
+              "name": "Houston",
+              "lat": 29.7633,
+              "lng": -95.3632,
+              "major": true
+            },
+            {
+              "name": "Phoenix",
+              "lat": 33.4484,
+              "lng": -112.0739,
+              "major": true
+            }
+          ]
+        },
+        {
+          "name": "Canada",
+          "cities": [
+            {
+              "name": "Toronto",
+              "lat": 43.6532,
+              "lng": -79.3832,
+              "major": true
+            },
+            {
+              "name": "Vancouver",
+              "lat": 49.2827,
+              "lng": -123.1207,
+              "major": true
+            },
+            {
+              "name": "Montreal",
+              "lat": 45.5088,
+              "lng": -73.5878,
+              "major": true
+            },
+            {
+              "name": "Calgary",
+              "lat": 51.0543,
+              "lng": -114.0708,
+              "major": true
+            },
+            {
+              "name": "Ottawa",
+              "lat": 45.4215,
+              "lng": -75.6972,
+              "major": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "South America",
+      "countries": [
+        {
+          "name": "Brazil",
+          "cities": [
+            {
+              "name": "São Paulo",
+              "lat": -23.5505,
+              "lng": -46.6333,
+              "major": true
+            },
+            {
+              "name": "Rio de Janeiro",
+              "lat": -22.9068,
+              "lng": -43.1729,
+              "major": true
+            },
+            {
+              "name": "Brasília",
+              "lat": -15.7942,
+              "lng": -47.8824,
+              "major": true
+            },
+            {
+              "name": "Belo Horizonte",
+              "lat": -19.9208,
+              "lng": -43.9378,
+              "major": true
+            },
+            {
+              "name": "Porto Alegre",
+              "lat": -30.0333,
+              "lng": -51.2300,
+              "major": true
+            }
+          ]
+        },
+        {
+          "name": "Argentina",
+          "cities": [
+            {
+              "name": "Buenos Aires",
+              "lat": -34.6037,
+              "lng": -58.3816,
+              "major": true
+            },
+            {
+              "name": "Córdoba",
+              "lat": -31.4167,
+              "lng": -64.1833,
+              "major": true
+            },
+            {
+              "name": "Mendoza",
+              "lat": -32.8903,
+              "lng": -68.8443,
+              "major": true
+            },
+            {
+              "name": "Tucumán",
+              "lat": -26.8167,
+              "lng": -65.2167,
+              "major": true
+            },
+            {
+              "name": "La Plata",
+              "lat": -34.9203,
+              "lng": -57.9547,
+              "major": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Australia",
+      "countries": [
+        {
+          "name": "Australia",
+          "cities": [
+            {
+              "name": "Sydney",
+              "lat": -33.8688,
+              "lng": 151.2093,
+              "major": true
+            },
+            {
+              "name": "Melbourne",
+              "lat": -37.7749,
+              "lng": 144.9833,
+              "major": true
+            },
+            {
+              "name": "Brisbane",
+              "lat": -27.4705,
+              "lng": 153.0215,
+              "major": true
+            },
+            {
+              "name": "Perth",
+              "lat": -31.9523,
+              "lng": 115.8613,
+              "major": true
+            },
+            {
+              "name": "Adelaide",
+              "lat": -34.9289,
+              "lng": 138.6007,
+              "major": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+/* WeatherTable styles */
+
+.table {
+  width: 100%;
+  background: var(--thunder-secondary);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.header {
+  background: var(--thunder-accent);
+  color: var(--thunder-light);
+  text-align: left;
+  padding: 1rem;
+}
+
+.cell {
+  padding: 1rem;
+  border-bottom: 1px solid var(--thunder-accent);
+}
+
+.row:hover {
+  background: var(--thunder-accent);
+}

@@ -1,0 +1,32 @@
+.searchContainer {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem auto;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3rem;
+  border-radius: 12px;
+  background: var(--thunder-secondary);
+  border: 2px solid var(--thunder-accent);
+  color: var(--thunder-light);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--thunder-text);
+  box-shadow: 0 0 10px rgba(233, 69, 96, 0.2);
+}
+
+.searchIcon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--thunder-text);
+  font-size: 1.2rem;
+}

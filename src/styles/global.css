@@ -1,0 +1,41 @@
+/* global styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --thunder-primary: #1a1a2e;
+  --thunder-secondary: #16213e;
+  --thunder-accent: #0f3460;
+  --thunder-highlight: #533483;
+  --thunder-text: #e94560;
+  --thunder-light: #f5f5f5;
+}
+
+body {
+  background-color: var(--thunder-primary);
+  color: var(--thunder-light);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Override any Tailwind text colors that might be causing issues */
+.text-gray-600,
+.text-gray-700,
+.text-gray-800,
+.text-gray-900 {
+  color: var(--thunder-light) !important;
+}
+
+/* Ensure form elements are visible */
+select, 
+input, 
+button {
+  color: var(--thunder-light);
+  background-color: var(--thunder-secondary);
+  border-color: var(--thunder-accent);
+}
+
+/* Ensure text contrast */
+h1, h2, h3, p {
+  color: var(--thunder-light);
+}

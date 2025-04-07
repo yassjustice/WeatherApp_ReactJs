@@ -1,0 +1,102 @@
+.container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.regionsGrid {
+  display: grid;
+  gap: 2rem;
+}
+
+.regionCard {
+  background: var(--thunder-secondary);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.regionTitle {
+  color: var(--thunder-text);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 2px solid var(--thunder-accent);
+  padding-bottom: 0.5rem;
+}
+
+.countriesGrid {
+  display: grid;
+  gap: 2rem;
+}
+
+.countrySection {
+  background: var(--thunder-accent);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.countryTitle {
+  color: var(--thunder-light);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.citiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.cityCard {
+  background: var(--thunder-secondary);
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.cityCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border-color: var(--thunder-text);
+}
+
+.majorCity {
+  position: relative;
+}
+
+.majorCity::after {
+  content: '★';
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: var(--thunder-text);
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.cityName {
+  color: var(--thunder-light);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.coordinates {
+  color: var(--thunder-text);
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.noResults {
+  text-align: center;
+  padding: 2rem;
+  background: var(--thunder-secondary);
+  border-radius: 12px;
+  color: var(--thunder-text);
+  margin-top: 1rem;
+}

@@ -1,0 +1,9 @@
+/* CSS variables */
+:root {
+    --primary-color: #1d4ed8;
+    --secondary-color: #3b82f6;
+    --bg-color: #f0f9ff;
+    --text-color: #1e293b;
+    --border-radius: 12px;
+  }
+  

@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.select {
+  background: var(--thunder-secondary);
+  color: var(--thunder-light);
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--thunder-accent);
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.select:focus {
+  border-color: var(--thunder-text);
+}
+
+.label {
+  color: var(--thunder-text);
+  font-weight: 500;
+}

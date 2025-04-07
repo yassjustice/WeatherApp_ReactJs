@@ -1,0 +1,35 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.weatherView {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.backButton {
+  background: var(--thunder-accent);
+  color: var(--thunder-light);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  align-self: flex-start;
+}
+
+.backButton:hover {
+  background: var(--thunder-highlight);
+}
+
+.error {
+  color: var(--thunder-text);
+  text-align: center;
+  padding: 1rem;
+  background: rgba(233, 69, 96, 0.1);
+  border-radius: 8px;
+  margin-top: 1rem;
+}
