@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import WeatherCard from "../WeatherCard/WeatherCard";
-import WeatherTable from "../WeatherTable/WeatherTable";
+import WeatherStats from "../WeatherStats/WeatherStats";
+import ForecastTabs from "../ForecastTabs/ForecastTabs";
 import CountrySelector from "../CountrySelector/CountrySelector";
 import Loader from "../Loader/Loader";
 import { getCities } from "../../services/cityService";
 import { getWeather } from "../../services/weatherService";
+import { SettingsProvider } from "../../context/SettingsContext";
 import styles from './WeatherDashboard.module.css';
 
 function WeatherDashboard() {
@@ -45,41 +47,42 @@ function WeatherDashboard() {
   if (loading && !citiesData.regions.length) return <Loader />;
 
   return (
-    <div className={styles.container}>
-      {!selectedCity ? (
-        <CountrySelector 
-          data={citiesData}
-          onCitySelect={(city) => {
-            setSelectedCity(city);
-            fetchCityWeather(city);
-          }}
-        />
-      ) : (
-        <div className={styles.weatherView}>
-          <button 
-            className={styles.backButton}
-            onClick={() => setSelectedCity(null)}
-          >
-            ← Back to Cities
-          </button>
-          
-          <WeatherCard
-            city={selectedCity.name}
-            data={weatherData}
+    <SettingsProvider>
+      <div className={styles.container}>
+        {!selectedCity ? (
+          <CountrySelector 
+            data={citiesData}
+            onCitySelect={(city) => {
+              setSelectedCity(city);
+              fetchCityWeather(city);
+            }}
           />
-          
-          {weatherData && (
-            <WeatherTable data={{
-              city: selectedCity.name,
-              temperature: weatherData.current_weather.temperature,
-              weathercode: weatherData.current_weather.weathercode
-            }} />
-          )}
-        </div>
-      )}
-      
-      {error && <p className={styles.error}>{error}</p>}
-    </div>
+        ) : (
+          <div className={styles.weatherView}>
+            <button 
+              className={styles.backButton}
+              onClick={() => setSelectedCity(null)}
+            >
+              ← Back to Cities
+            </button>
+            
+            <WeatherCard
+              city={selectedCity.name}
+              data={weatherData}
+            />
+            
+            {weatherData && (
+              <>
+                <WeatherStats data={weatherData} />
+                <ForecastTabs data={weatherData} />
+              </>
+            )}
+          </div>
+        )}
+        
+        {error && <p className={styles.error}>{error}</p>}
+      </div>
+    </SettingsProvider>
   );
 }
 

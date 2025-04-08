@@ -1,0 +1,139 @@
+.container {
+  background: var(--thunder-secondary);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--thunder-accent);
+  padding-bottom: 0.5rem;
+}
+
+.tab {
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--thunder-light);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  background: var(--thunder-accent);
+  border-color: var(--thunder-text);
+}
+
+.tab.active {
+  background: var(--thunder-accent);
+  border-color: var(--thunder-text);
+  color: var(--thunder-text);
+}
+
+.content {
+  min-height: 300px;
+}
+
+.hourlyForecast {
+  padding: 1rem;
+  background: var(--thunder-primary);
+  border-radius: 8px;
+}
+
+.dailyForecast {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.dayCard {
+  background: var(--thunder-primary);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.dayCard:hover {
+  transform: translateY(-2px);
+  border-color: var(--thunder-text);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dayCard h3 {
+  color: var(--thunder-light);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tempRange {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+.tempRange span:first-child {
+  color: var(--thunder-text);
+  font-weight: bold;
+}
+
+.tempRange span:last-child {
+  color: var(--thunder-light);
+  opacity: 0.8;
+}
+
+.icon {
+  font-size: 2rem;
+  color: var(--thunder-text);
+  margin: 0.5rem 0;
+}
+
+/* Chart customization */
+:global(.recharts-cartesian-grid-horizontal line),
+:global(.recharts-cartesian-grid-vertical line) {
+  stroke: var(--thunder-accent);
+  opacity: 0.3;
+}
+
+:global(.recharts-tooltip-wrapper) {
+  background: var(--thunder-secondary) !important;
+  border: 1px solid var(--thunder-text) !important;
+  border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .dailyForecast {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .tabs {
+    gap: 0.5rem;
+  }
+
+  .tab {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dailyForecast {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    min-height: 250px;
+  }
+}
