@@ -29,7 +29,7 @@ export async function getWeather(cityName) {
     try {
         const coords = await findCityCoordinates(cityName);
         const response = await fetch(
-            `${WEATHER_API}?latitude=${coords.latitude}&longitude=${coords.longitude}&hourly=temperature_2m,relativehumidity_2m,precipitation_probability,windspeed_10m,uv_index&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,windspeed_10m_max&current_weather=true&timezone=auto`
+            `${WEATHER_API}?latitude=${coords.latitude}&longitude=${coords.longitude}&hourly=temperature_2m,relativehumidity_2m,precipitation_probability,windspeed_10m,weathercode,uv_index&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,weathercode&current_weather=true&timezone=auto`
         );
         
         if (!response.ok) throw new Error('Weather fetch failed');
